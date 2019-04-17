@@ -1,0 +1,6 @@
+[dadata_login]
+API_KEY=XXX
+
+[PG]
+pg_srv=vm-pg.arc.world
+
