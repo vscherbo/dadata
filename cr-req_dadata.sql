@@ -27,7 +27,7 @@ data = {
 good_status = [ 200 ]
 
 try:
-    r = requests.post(url, data=json.dumps(data), headers=headers, timeout=5)
+    r = requests.post(url, data=json.dumps(data), headers=headers, timeout=15, verify=False)
 except plpy.SPIError, e:
     plpy.error("Ошибка запроса dadata {0}/{1}, err={2}".format(arg_query, arg_resource, e.sqlstate))
     ret_flg = False
